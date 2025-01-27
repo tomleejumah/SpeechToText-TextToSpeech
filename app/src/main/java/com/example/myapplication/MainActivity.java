@@ -31,6 +31,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.google.zxing.WriterException;
 
 import java.util.ArrayList;
@@ -163,12 +164,12 @@ public class MainActivity extends AppCompatActivity {
 
                         qrgEncoder = new QRGEncoder(inputValue, null, QRGContents.Type.TEXT, smallerDimension);
 
-                        try {
-                            bitmap = qrgEncoder.encodeAsBitmap();
+//                        try {
+                            bitmap = qrgEncoder.getBitmap();
                             qrImage.setImageBitmap(bitmap);
-                        } catch (WriterException e) {
-                            Log.v(TAG, e.toString());
-                        }
+//                        } catch (WriterException e) {
+//                            Log.v(TAG, e.toString());
+//                        }
                     }else {
                         failed.setImageDrawable(null);
                         textFailed.setImageDrawable(null);
@@ -183,12 +184,12 @@ public class MainActivity extends AppCompatActivity {
 
                         qrgEncoder = new QRGEncoder(inputValue, null, QRGContents.Type.TEXT, smallerDimension);
 
-                        try {
-                            bitmap = qrgEncoder.encodeAsBitmap();
+//                        try {
+                            bitmap = qrgEncoder.getBitmap();
                             qrImage.setImageBitmap(bitmap);
-                        } catch (WriterException e) {
-                            Log.v(TAG, e.toString());
-                        }
+//                        } catch (WriterException e) {
+//                            Log.v(TAG, e.toString());
+//                        }
                     }
 
                     }else if (data.contains("dua")) {
@@ -205,12 +206,12 @@ public class MainActivity extends AppCompatActivity {
 
                         qrgEncoder = new QRGEncoder(inputValue, null, QRGContents.Type.TEXT, smallerDimension);
 
-                        try {
-                            bitmap = qrgEncoder.encodeAsBitmap();
+//                        try {
+                            bitmap = qrgEncoder.getBitmap();
                             qrImage.setImageBitmap(bitmap);
-                        } catch (WriterException e) {
-                            Log.v(TAG, e.toString());
-                        }
+//                        } catch (WriterException e) {
+//                            Log.v(TAG, e.toString());
+//                        }
                     }else {
                         failed.setImageDrawable(null);
                         textFailed.setImageDrawable(null);
@@ -225,12 +226,12 @@ public class MainActivity extends AppCompatActivity {
 
                         qrgEncoder = new QRGEncoder(inputValue, null, QRGContents.Type.TEXT, smallerDimension);
 
-                        try {
-                            bitmap = qrgEncoder.encodeAsBitmap();
+//                        try {
+                            bitmap = qrgEncoder.getBitmap();
                             qrImage.setImageBitmap(bitmap);
-                        } catch (WriterException e) {
-                            Log.v(TAG, e.toString());
-                        }
+//                        } catch (WriterException e) {
+//                            Log.v(TAG, e.toString());
+//                        }
                     }
                 }else if (data.contains("tiga")) {
                         inputValue = editText.getText().toString().trim();
@@ -246,12 +247,12 @@ public class MainActivity extends AppCompatActivity {
 
                             qrgEncoder = new QRGEncoder(inputValue, null, QRGContents.Type.TEXT, smallerDimension);
 
-                            try {
-                                bitmap = qrgEncoder.encodeAsBitmap();
+//                            try {
+                                bitmap = qrgEncoder.getBitmap();
                                 qrImage.setImageBitmap(bitmap);
-                            } catch (WriterException e) {
-                                Log.v(TAG, e.toString());
-                            }
+//                            } catch (WriterException e) {
+//                                Log.v(TAG, e.toString());
+//                            }
                         } else {
                             failed.setImageDrawable(null);
                             textFailed.setImageDrawable(null);
@@ -266,12 +267,12 @@ public class MainActivity extends AppCompatActivity {
 
                             qrgEncoder = new QRGEncoder(inputValue, null, QRGContents.Type.TEXT, smallerDimension);
 
-                            try {
-                                bitmap = qrgEncoder.encodeAsBitmap();
+//                            try {
+                                bitmap = qrgEncoder.getBitmap();
                                 qrImage.setImageBitmap(bitmap);
-                            } catch (WriterException e) {
-                                Log.v(TAG, e.toString());
-                            }
+//                            } catch (WriterException e) {
+//                                Log.v(TAG, e.toString());
+//                            }
                         }
                     } else {
                         qrImage.setImageDrawable(null);
